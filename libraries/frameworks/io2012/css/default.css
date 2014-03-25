@@ -257,7 +257,6 @@ slides > slide {
   -o-transition: all 0.6s ease-in-out;
   transition: all 0.6s ease-in-out;
 }
-
 /* line 119, ../scss/default.scss */
 slides > slide.far-past {
   display: none;

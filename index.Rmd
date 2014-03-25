@@ -1,0 +1,44 @@
+---
+title       : Test slide deck
+subtitle    : Testing conversion of io2012 to pdf format with images
+author      : Jacqueline Buros
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+---
+
+## Sample slide 1
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+```{r,message = F, echo = FALSE}
+require(ggplot2)
+require(scales)
+require(datasets)
+data(iris)
+```
+
+--- 
+
+## Sepal Width and Sepal Length by Species (Iris dataset)
+
+```{r , fig.height = 8, fig.width = 11, fig.align = 'center', message = F, echo = F}
+ggplot(data = iris, mapping = aes(x = Sepal.Width, y = Sepal.Length, group = Species, colour = Species)) + geom_point()
+```
+
+--- 
+
+## Petal Width and Sepal Length by Species (Iris dataset)
+
+```{r , fig.height = 8, fig.width = 11, fig.align = 'center', message = F, echo = F}
+ggplot(data = iris, mapping = aes(x = Petal.Width, y = Petal.Length, group = Species, colour = Species)) + geom_point()
+```
+
+--- 
+
+The end
+
